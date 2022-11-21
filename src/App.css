@@ -1,7 +1,18 @@
 .select-select{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
   width: 100%;
   height: 100vh;
+}
+.select-form{
+  width: 50%;
+}
+
+@media screen and (max-width:667px) {
+  .select-form{
+    width: 100%;
+    padding: 0px 15px;
+  }
 }
