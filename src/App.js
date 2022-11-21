@@ -15,10 +15,14 @@ function App() {
     { value: 'Silver', label: 'Silver' },
   ]
 
+  const handleChange = selectOption => {
+    console.log("handleChange", selectOption)
+  }
+
   return (
     <div className='select-select'>
       <h1>select your option</h1>
-      <Select className='select-form' options={options} />
+      <Select className='select-form' options={options} onChange={handleChange} isMulti />
     </div>
   )
 }
